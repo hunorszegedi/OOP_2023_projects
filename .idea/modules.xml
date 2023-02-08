@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/2022.Oop.iml" filepath="$PROJECT_DIR$/.idea/2022.Oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-01/labor-01.iml" filepath="$PROJECT_DIR$/labor-01/labor-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-02/labor-02.iml" filepath="$PROJECT_DIR$/labor-02/labor-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-03/labor-03.iml" filepath="$PROJECT_DIR$/labor-03/labor-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-04/labor-04.iml" filepath="$PROJECT_DIR$/labor-04/labor-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-05/labor-05.iml" filepath="$PROJECT_DIR$/labor-05/labor-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-06/labor-06.iml" filepath="$PROJECT_DIR$/labor-06/labor-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-07/labor-07.iml" filepath="$PROJECT_DIR$/labor-07/labor-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-08/labor-08.iml" filepath="$PROJECT_DIR$/labor-08/labor-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-09/labor-09.iml" filepath="$PROJECT_DIR$/labor-09/labor-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-10/labor-10.iml" filepath="$PROJECT_DIR$/labor-10/labor-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-11/labor-11.iml" filepath="$PROJECT_DIR$/labor-11/labor-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-12/labor-12.iml" filepath="$PROJECT_DIR$/labor-12/labor-12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-13/labor-13.iml" filepath="$PROJECT_DIR$/labor-13/labor-13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/labor-14/labor-14.iml" filepath="$PROJECT_DIR$/labor-14/labor-14.iml" />
+    </modules>
+  </component>
+</project>
