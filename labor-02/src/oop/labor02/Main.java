@@ -1,6 +1,5 @@
 package oop.labor02;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class Main {
@@ -98,9 +97,65 @@ public class Main {
         }
         System.out.printf("Total area of the generated ractangles: %.3f", totalGeneratedArea);
 
-        
+
         //Exercise 3
-        System.out.println("\n\tExercise 3:\n");
+        System.out.println("\n\n\tExercise 3:");
+
+        System.out.println(DateUtil.isValidDate(2000, 2, 29));
+        System.out.println(!DateUtil.isValidDate(2000, 2, 30));
+        System.out.println(!DateUtil.isValidDate(1900, 2, 29));
+        System.out.println(DateUtil.isValidDate(1900, 2, 28));
+        System.out.println(!DateUtil.isValidDate(-1900, 2, 28));
+        System.out.println(!DateUtil.isValidDate(0, 2, 28));
+        System.out.println(!DateUtil.isValidDate(2021, 2, 29));
+        System.out.println(DateUtil.isValidDate(2020, 2, 29));
+        System.out.println(!DateUtil.isValidDate(2020, 1, 32));
+        System.out.println(!DateUtil.isValidDate(2020, 1, 0));
+        System.out.println(!DateUtil.isValidDate(2020, 0, 0));
+        System.out.println(!DateUtil.isValidDate(2020, 4, 31));
+        System.out.println(DateUtil.isValidDate(2020, 1, 31));
+
+        System.out.print("\n\tDate 0: ");
+        MyDate date0 = new MyDate(2023, 2, 27);
+        if (!DateUtil.isValidDate(date0.getYear(), date0.getMonth(), date0.getDay())) {
+            System.out.println("\nInvalid Date!");
+        }
+        System.out.print(date0.toStringDate());
+
+
+        System.out.printf("\t\tPart 2\n");
+        // creating a randomb object
+        Random rand2 = new Random();
+
+        // creating a MyDate array and generating random values
+        MyDate[] dates = new MyDate[100];
+
+        int invalidDatesCounter = 0;
+        for (int i = 0; i < dates.length; i++) {
+            // generating random year, month, day
+            int year = 1 + rand2.nextInt(2023);
+            int month = 1 + rand2.nextInt(12);
+            int day = 1 + rand2.nextInt(31);
+            // creating a MyDate object with a year, month, day value
+            dates[i] = new MyDate(year, month, day);
+            // is valid?
+            if (!DateUtil.isValidDate(dates[i].getYear(), dates[i].getMonth(), dates[i].getDay())) {
+                // if it is not, then counter++
+                invalidDatesCounter++;
+            }
+        }
+
+        // printing valide dates
+        for (MyDate date : dates) {
+            // is valid?
+            if (DateUtil.isValidDate(date.getYear(), date.getMonth(), date.getDay())) {
+                // if it is valid, then print
+                System.out.println(date.toStringDate());
+            }
+        }
+
+        // printing invalid dates dounter
+        System.out.println("Number of invalid dates: " + invalidDatesCounter);
 
     }
 }
