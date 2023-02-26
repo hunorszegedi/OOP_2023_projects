@@ -24,16 +24,18 @@ public class BankAccount {
         }
     }
 
-    public boolean withdraw(double amount){
-        balance -= amount;
-        if(balance < 0){
+    public boolean withdraw(double amount) {
+        if (amount > balance) {
             return false;
+        } else {
+            balance -= amount;
+            return true;
         }
-        return true;
     }
 
     //mindent
-    public String toString(){
+    public String toString() {
         return "\tBankAccount\n" + "Szamlaszam: " + accountNumber + "\nEgyenleg: " + balance;
     }
+
 }
