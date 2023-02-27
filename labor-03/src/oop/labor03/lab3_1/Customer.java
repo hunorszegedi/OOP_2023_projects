@@ -14,7 +14,7 @@ public class Customer {
         account = pAccount;
     }
 
-    public void closeAccount(){
+    public void closeAccount() {
         account = null;
     }
 
@@ -31,7 +31,7 @@ public class Customer {
     }
 
     public void setLastName(String pLastName) {
-         lastName = pLastName;
+        lastName = pLastName;
     }
 
     //minden
