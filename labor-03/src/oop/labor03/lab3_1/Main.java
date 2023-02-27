@@ -15,6 +15,7 @@ public class Main {
         //set, print, deposit, withdraw
         mary.getAccount().deposit(10000);
         john.getAccount().deposit(25000);
+        john.getAccount().deposit(1000000);
         mary.getAccount().withdraw(1200);
         mary.getAccount().deposit(3000);
         john.getAccount().withdraw(3000);
