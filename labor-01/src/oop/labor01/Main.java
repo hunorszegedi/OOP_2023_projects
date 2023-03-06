@@ -118,6 +118,7 @@ public class Main {
         } else return Double.NaN;
     }
 
+    //ATIRNI, mert 2 for nem a legkedveltebb
     public static double[] max2(double array2[]) {
         double max[] = {Double.NEGATIVE_INFINITY,
                 Double.NEGATIVE_INFINITY};
