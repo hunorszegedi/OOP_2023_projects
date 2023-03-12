@@ -36,7 +36,7 @@ public class BankAccount {
 
     //mindent
     public String toString() {
-        return "\tBankAccount\n" + "Szamlaszam: " + accountNumber + "\nEgyenleg: " + balance;
+        return "\n\n\tBankAccount\n" + "Szamlaszam: " + accountNumber + "\nEgyenleg: " + balance;
     }
 
 }

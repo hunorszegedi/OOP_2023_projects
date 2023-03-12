@@ -1,7 +1,6 @@
 package oop.labor04.lab4_2;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Customer {
     private String firstName;
@@ -16,6 +15,13 @@ public class Customer {
 
     //methods
     //1.
+    public int getNumAccounts() {
+        int counter = 0;
+        for (BankAccount item : accounts) {
+            counter++;
+        }
+        return counter;
+    }
 
     //2.
     public void addAccount(BankAccount account) {
@@ -30,7 +36,6 @@ public class Customer {
             }
         }
     }
-
 
     //4.
     public String getFirstName() {
@@ -48,6 +53,26 @@ public class Customer {
     }
 
     //7.
+    public void closeAccount(String accountNumber) {
+        int original = getNumAccounts();
+        int temp = getNumAccounts();
+        for (int i = 0; i < temp; i++) {
+            if (accounts.get(i).getAccountNumber().equals(accountNumber)) {
+                accounts.set(i, accounts.get(temp - 1));
+                accounts.set(temp - 1, null);
+                temp--;
+                break;
+            }
+        }
+        if (original == temp) {
+            System.out.println("Doesn't exist!\n");
+        }
+    }
 
     //8.
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " accounts\n\n" + accounts +
+                "\n\n";
+    }
 }

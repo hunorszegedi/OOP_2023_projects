@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-
         ArrayList<Person>person = readFromCSVFile("lab4_1_input.csv");
         System.out.println(person);
     }
