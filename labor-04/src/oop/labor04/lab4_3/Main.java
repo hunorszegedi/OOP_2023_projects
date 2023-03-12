@@ -10,10 +10,8 @@ public class Main {
         a1.print();
         a1.sort();
         a1.print();
-
         System.out.printf("\tMean: %10.2f Stddev: %10.2f\n",
                 a1.mean(), a1.stddev());
-
         double t[] = {4, 9, 0, -34, 28, 76, 100, -1};
         MyArray a2 = new MyArray(t);
         a2.print();
