@@ -28,6 +28,7 @@ public class MyArray {
         length = arr.length();
         elements = new double[length];
         System.arraycopy(arr.getArray(), 0, elements, 0, length);
+
     }
 
     // Constructor for creating a MyArray from a file that contains the size and the elements
@@ -96,7 +97,8 @@ public class MyArray {
     }
 
     // Print the elements of the array
-    public void print() {
+    public void print(String arrayName) {
+        System.out.println(arrayName);
         System.out.print("[ ");
         for (int i = 0; i < length; i++) {
             System.out.print(elements[i] + " ");
