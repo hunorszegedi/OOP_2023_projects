@@ -25,7 +25,7 @@ public class Course {
 
     @Override
     public String toString() {
-        return "\tCourse\n" +
+        return "\n\tCourse\n" +
                 "Name: " + name + "\n" +
                 "Description: " + description + "\n" +
                 "NumHours: " + numHours +
