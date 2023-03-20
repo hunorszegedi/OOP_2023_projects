@@ -24,5 +24,13 @@ public class Main {
         System.out.println("\tMULTIPLY:");
         multiply.printMatrix();
 
+        Matrix m = new Matrix(3, 3);
+        m.fillRandom(1, 10);
+        System.out.println("\tMATRIX:");
+        m.printMatrix();
+        Matrix transpose = Matrix.transpose(m);
+        System.out.println("\tTRANSPOSE");
+        transpose.printMatrix();
+
     }
 }
