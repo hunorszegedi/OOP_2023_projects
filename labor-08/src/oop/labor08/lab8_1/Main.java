@@ -40,5 +40,9 @@ public class Main {
 
         System.out.println(customerOTP1);
         System.out.println(customerOTP2);
+
+        checking1.withdraw(100);
+
+        System.out.println(bank1);
     }
 }
