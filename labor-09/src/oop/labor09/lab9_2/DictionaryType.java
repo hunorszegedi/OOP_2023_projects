@@ -8,7 +8,8 @@ public enum DictionaryType {
         return DictionaryType.values();
     }
 
-    public static DictionaryType valueOf(String word) {
-        return DictionaryType.valueOf(word);
-    }
+//    public static DictionaryType valueOf(String word) {
+//        //return DictionaryType.valueOf(word);
+//        return ;
+//    }
 }
