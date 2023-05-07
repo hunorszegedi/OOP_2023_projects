@@ -1,4 +1,4 @@
-package oop.labor09.lab9_2;
+package oop.labor09.lab9_gyakorlas_2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
