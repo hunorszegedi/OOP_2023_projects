@@ -6,21 +6,25 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Storage {
-    private ArrayList<Product> products;
+    private final ArrayList<Product> products = new ArrayList<>();
 
-    public Storage(String filename) throws FileNotFoundException {
-        this.products = new ArrayList<>();
-        Scanner scanner = new Scanner(new File(filename));
-        while (scanner.hasNextLine()) {
-            String line = scanner.nextLine();
-            String[] parts = line.split(" ");
-            int identifier = Integer.parseInt(parts[0]);
-            String name = parts[1];
-            int amount = Integer.parseInt(parts[2]);
-            int price = Integer.parseInt(parts[3]);
-            this.products.add(new Product(identifier, name, amount, price));
+
+    public Storage(String fileName) {
+        try (Scanner scanner = new Scanner(new File(fileName))) {
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String[] parts = line.split(" ");
+                int identifier = Integer.parseInt(parts[0].trim());
+                String name = parts[1].trim();
+                int amount = Integer.parseInt(parts[2].trim());
+                int price = Integer.parseInt(parts[3].trim());
+                if (parts.length == 4) {
+                    this.products.add(new Product(identifier, name, amount, price));
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("File Not Found \n" + fileName + "!\n");
         }
-        scanner.close();
     }
 
     public ArrayList<Product> getProducts() {
@@ -49,8 +53,8 @@ public class Storage {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] parts = line.split(" ");
-            int identifier = Integer.parseInt(parts[0]);
-            int newAmount = Integer.parseInt(parts[1]);
+            int identifier = Integer.parseInt(parts[0].trim());
+            int newAmount = Integer.parseInt(parts[1].trim());
             Product product = getProductById(identifier);
             if (product != null) {
                 product.increaseAmount(newAmount);
@@ -58,7 +62,16 @@ public class Storage {
             }
         }
         scanner.close();
-        System.out.println(updatedCount + "products were succesfully updated.");
+        System.out.println(updatedCount + " products were succesfully updated.");
         return updatedCount;
     }
+
+    @Override
+    public String toString() {
+        return "Storage{" +
+                "products=" + products +
+                '}';
+    }
+
+
 }

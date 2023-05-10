@@ -1,10 +1,10 @@
 package oop.labor11.lab11_3;
 
-public class Product implements Comparable<Product>{
-    private int identifier;
-    private String name;
+public class Product implements Comparable<Product> {
+    private final int identifier;
+    private final String name;
     private int amount;
-    private int price;
+    private final int price;
 
     public Product(int identifier, String name, int amount, int price) {
         this.identifier = identifier;
