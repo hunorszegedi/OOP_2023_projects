@@ -1,0 +1,11 @@
+peter 1950
+robert 1945
+mary 1950 2002
+alex 1965 1999
+
+
+bob 1978
+aliz 1978 2012
+bob 2000
+xaver 2010
+robert 2007
