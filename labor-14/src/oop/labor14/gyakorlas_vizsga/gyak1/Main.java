@@ -15,14 +15,14 @@ public class Main {
         InstanceCounter ic = new InstanceCounter();
         System.out.println(InstanceCounter.getCounter());
 
-        for(GestureType type: GestureType.values()){
-            System.out.println(type.name()+", "+
-                    type.getName()+", "+ type.getValue());
+        for (GestureType type : GestureType.values()) {
+            System.out.println(type.name() + ", " +
+                    type.getName() + ", " + type.getValue());
         }
 
         PeldanySzamlalo sz1 = new PeldanySzamlalo();
         System.out.println(sz1);
-        System.out.println( (new PeldanySzamlalo()).getPeldanySzam());
+        System.out.println((new PeldanySzamlalo()).getPeldanySzam());
         System.out.println(PeldanySzamlalo.getPeldanySzam());
 
         Employee employee = new Employee("Attila", 10000, 2000);
@@ -31,18 +31,18 @@ public class Main {
         employee = new Manager("Jozska", 8000, 2000, 3);
         System.out.println(employee.toString());
 
-        Employee e1 = new Employee("Endre",8000, 2000);
-        Manager m1 = new Manager("Johanna",3000, 2001, 3);
+        Employee e1 = new Employee("Endre", 8000, 2000);
+        Manager m1 = new Manager("Johanna", 3000, 2001, 3);
         System.out.println(e1.createMessage(e1));
         System.out.println(m1.createMessage(m1));
 
-        Employee emps[] = new Employee[ 100 ];
-        emps[ 0 ] = new Employee("Ati", 3000, 2000);
-        emps[ 1 ] = new Manager("Laci", 51000, 20001, 2);
-        emps[ 2 ] = new Employee("Joska", 170000, 2000);
+        Employee emps[] = new Employee[100];
+        emps[0] = new Employee("Ati", 3000, 2000);
+        emps[1] = new Manager("Laci", 51000, 20001, 2);
+        emps[2] = new Employee("Joska", 170000, 2000);
         int counter = 0;
-        for( Employee e: emps ){
-            if( e instanceof Manager ){
+        for (Employee e : emps) {
+            if (e instanceof Manager) {
                 ++counter;
             }
         }
@@ -62,3 +62,4 @@ public class Main {
         }
     }
 }
+
