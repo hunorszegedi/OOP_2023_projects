@@ -47,9 +47,8 @@ public class Person {
     @Override
     public String toString() {
         return
-                "name: " + name + "\t" +
-                "byear: " + byear + "\t" +
-                "dyear: " + dyear + "\t" +
-                "\n";
+                "name: " + name + "\n" +
+                "byear: " + byear + "\n" +
+                "dyear: " + dyear + "\n";
     }
 }

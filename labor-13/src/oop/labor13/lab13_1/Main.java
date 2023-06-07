@@ -6,7 +6,7 @@ public class Main {
         register.readFile("input.txt");
 //        System.out.println(register);
         register.printData();
-        System.out.println("\n");
+        System.out.println("After sort:\n");
         register.sortPersons();
     }
 }
